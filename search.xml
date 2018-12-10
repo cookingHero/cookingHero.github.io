@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search> 
+  
+    
+    <entry>
+      <title>更换主题后，新建page文件时报错</title>
+      <link href="/2017/05/11/a/"/>
+      <url>/2017/05/11/a/</url>
+      
+        <content type="html"><![CDATA[<h1 id="Hexo更换主题需注意事项"><a href="#Hexo更换主题需注意事项" class="headerlink" title="Hexo更换主题需注意事项"></a>Hexo更换主题需注意事项</h1><h2 id="首先，如何下载新的hexo主题"><a href="#首先，如何下载新的hexo主题" class="headerlink" title="首先，如何下载新的hexo主题"></a>首先，如何下载新的hexo主题</h2><p>进入到 <a href="https://hexo.io/themes/" target="_blank" rel="noopener">hexo</a> 官网中，选择Themes，下面有很多样式的主题，可以根据自己喜欢的进行选择</p><p>找到具体主题后，复制相应的主题名称，进入到gitHub中进行搜索， 会出现相应的代码，用git把</p><p>代码down下来即可。</p><p>直接将文件夹放入到Hexo的themes下，切记不要修改文件名，好，废话不多说，部署整个过程中遇到的问题。</p><h3 id="问题：1-在github中项目的出现404或者样式展示不全问题"><a href="#问题：1-在github中项目的出现404或者样式展示不全问题" class="headerlink" title="问题：1.在github中项目的出现404或者样式展示不全问题"></a>问题：1.在github中项目的出现404或者样式展示不全问题</h3><p>原因：这个一般问题都是路径问题，有可能是配置文件中url和root写错了，或者是github配置问题</p><p><img src="C:\Users\LCY\AppData\Local\Temp\1542877469239.png" alt="1542877469239"></p><p><img src="C:\Users\LCY\AppData\Local\Temp\1542877516185.png" alt="1542877516185"></p><p>在github中的项目name最好和总工程的名字是一样的，要不然路径总是有莫名其妙的问题，统一修改成一样的，Hexo配置文件按图修改，大部分问题可解决。</p><h3 id="问题：2-生成新文章时报错"><a href="#问题：2-生成新文章时报错" class="headerlink" title="问题：2.生成新文章时报错"></a>问题：2.生成新文章时报错</h3><p><img src="C:\Users\LCY\AppData\Local\Temp\1542877732998.png" alt="1542877732998"></p><p>也就是这个报错 ：</p><pre><code>TypeError: Cannot read property &#39;utcOffset&#39; of null</code></pre><p>导致原因是新导入的主题配置文件中的timezone 与 hexo主配置不匹配，导致这类报错。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> Hexo </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Hexo </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    <entry>
+      <title>vue使用时，对vuex的理解</title>
+      <link href="/2017/04/15/vuex/"/>
+      <url>/2017/04/15/vuex/</url>
+      
+        <content type="html"><![CDATA[<h1 id="vuex-与-sessionStorage-进行区分"><a href="#vuex-与-sessionStorage-进行区分" class="headerlink" title="vuex 与 sessionStorage 进行区分"></a>vuex 与 sessionStorage 进行区分</h1><h2 id="首先，理解vuex的作用"><a href="#首先，理解vuex的作用" class="headerlink" title="首先，理解vuex的作用"></a>首先，理解vuex的作用</h2><p>每一个 Vuex 应用的核心就是 store（仓库）。“store”基本上就是一个容器，它包含着你的应用中大部分的<strong>状态 (state)</strong>。 </p><p>Vuex 和单纯的全局对象有以下两点不同： </p><ol><li>Vuex 的状态存储是响应式的。当 Vue 组件从 store 中读取状态的时候，若 store 中的状态发生变化，那么相应的组件也会相应地得到高效更新。 </li><li><p>你不能直接改变 store 中的状态。改变 store 中的状态的唯一途径就是显式地<strong>提交 (commit) mutation</strong>。这样使得我们可以方便地跟踪每一个状态的变化，从而让我们能够实现一些工具帮助我们更好地了解我们的应用。</p><p>通过对上面的理解，至少可以区分vuex与全局对象的区别，正如此，全局对象一般存储在session中，所以这就是vuex与session的区别。</p></li></ol><p>注：官方文档进行查看 <a href="https://vuex.vuejs.org/zh/guide/" target="_blank" rel="noopener">vuex</a> </p><h2 id="通过存储方式及类型区别"><a href="#通过存储方式及类型区别" class="headerlink" title="通过存储方式及类型区别"></a>通过存储方式及类型区别</h2><ol><li>存储位置 ： vuex存储在内存，而session则以文件的方式存储在本地；</li><li>应用场景 ： vuex用于组件间的传值，而session则用于页面间的传值；</li><li>时效性 ： vuex存储的值刷新时会丢失，而localstorage不会清除，除非手动删除；</li></ol><p>还可以换种说法：</p><p>当 vuex 与 storage 关联的数据不变时，两者是等同的；但当是其中一个组件改变该数据时，同时另一个组件用到此数据，vuex是可以实现的，但storage是不可以的。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> vue </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> vue </tag>
+            
+            <tag> vuex </tag>
+            
+            <tag> session </tag>
+            
+        </tags>
+      
+    </entry>
+    
+  
+  
+</search>

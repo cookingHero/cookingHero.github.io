@@ -5,8 +5,8 @@
 
 <head><meta name="generator" content="Hexo 3.8.0">
     <meta charset="utf-8">
-    <meta name="keywords" content="标签, 、Li">
-    <meta name="description" content="标签 | 、Li">
+    <meta name="keywords" content="分类: vue, 、Li">
+    <meta name="description" content="分类: vue | 、Li">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -14,7 +14,7 @@
     <meta name="format-detection" content="telephone=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <title>标签 | 、Li</title>
+    <title>分类: vue | 、Li</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/font-awesome.min.css">
@@ -275,43 +275,29 @@ $('.bg-cover').css('background-image', 'url(/medias/banner/' + new Date().getDay
 
     
 
-<div id="tags" class="container chip-container">
+<div id="category-cloud" class="container chip-container">
     <div class="card">
         <div class="card-content">
-            <div class="tag-title center-align">文章标签</div>
+            <div class="tag-title center-align">文章分类</div>
             <div class="tag-chips">
                 
                 
-                <a href="/tags/vue/" title="vue: 1">
+                
+                <a href="/categories/vue/" title="vue: 1">
                     <span class="chip center-align waves-effect waves-light
-                             chip-default " data-tagname="vue" style="background-color: #F9EBEA;">vue
+                             chip-active " style="background-color: #F9EBEA;">vue
                         <span class="tag-length">1</span>
                     </span>
                 </a>
                 
                 
-                <a href="/tags/vuex/" title="vuex: 1">
+                <a href="/categories/Hexo/" title="Hexo: 1">
                     <span class="chip center-align waves-effect waves-light
-                             chip-default " data-tagname="vuex" style="background-color: #F5EEF8;">vuex
+                             chip-default " style="background-color: #F5EEF8;">Hexo
                         <span class="tag-length">1</span>
                     </span>
                 </a>
                 
-                
-                <a href="/tags/session/" title="session: 1">
-                    <span class="chip center-align waves-effect waves-light
-                             chip-default " data-tagname="session" style="background-color: #D5F5E3;">session
-                        <span class="tag-length">1</span>
-                    </span>
-                </a>
-                
-                
-                <a href="/tags/Hexo/" title="Hexo: 1">
-                    <span class="chip center-align waves-effect waves-light
-                             chip-default " data-tagname="Hexo" style="background-color: #E8F8F5;">Hexo
-                        <span class="tag-length">1</span>
-                    </span>
-                </a>
                 
             </div>
         </div>
@@ -319,31 +305,64 @@ $('.bg-cover').css('background-image', 'url(/medias/banner/' + new Date().getDay
 </div>
 
     
-    <link rel="stylesheet" type="text/css" href="/libs/jqcloud/jqcloud.css">
-<style type="text/css">
-    #tag-wordcloud {
-        width: 100%;
-        height: 300px;
-    }
-</style>
 
-<div class="container" data-aos="fade-up">
-    <div class="card">
-        <div id="tag-wordcloud" class="card-content"></div>
-    </div>
-</div>
+    <article id="articles" class="container articles">
+        <div class="row tags-posts">
+            
+            <div class="article tag-post col s12 m6 l4" data-aos="zoom-in">
+                <div class="card">
+                    <a href="/2017/04/15/vuex/">
+                        <div class="card-image tag-image">
+                            
+                            
+                            <img src="/medias/featureimages/3.jpg" class="responsive-img" alt="vue使用时，对vuex的理解">
+                            
+                            <span class="card-title">vue使用时，对vuex的理解</span>
+                        </div>
+                    </a>
+                    <div class="card-content article-content">
+                        <div class="summary">vuex 与 sessionStorage 进行区分首先，理解vuex的作用每一个 Vuex 应用的核心就是 store（仓库）。“stor</div>
+                        <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="fa fa-clock-o fa-fw icon-date"></i>2017-04-15
+                            </span>
+                            <span class="publish-author">
+                                
+                                <i class="fa fa-bookmark fa-fw icon-category"></i>
+                                
+                                <a href="/categories/vue/" class="post-category" target="_blank">
+                                    vue
+                                </a>
+                                
+                                
+                            </span>
+                        </div>
+                    </div>
 
-<script type="text/javascript" src="/libs/jqcloud/jqcloud-1.0.4.min.js"></script>
-<script type="text/javascript">
-    
-
-    $('#tag-wordcloud').jQCloud([{"text":"vue","weight":1,"link":"https://cookinghero.github.io/tags/vue/"},{"text":"vuex","weight":1,"link":"https://cookinghero.github.io/tags/vuex/"},{"text":"session","weight":1,"link":"https://cookinghero.github.io/tags/session/"},{"text":"Hexo","weight":1,"link":"https://cookinghero.github.io/tags/Hexo/"}], {
-        autoResize: true
-    });
-</script>
-    
-
+                    
+                    <div class="card-action article-tags">
+                        
+                        <a href="/tags/vue/" target="_blank">
+                            <span class="chip bg-color">vue</span>
+                        </a>
+                        
+                        <a href="/tags/vuex/" target="_blank">
+                            <span class="chip bg-color">vuex</span>
+                        </a>
+                        
+                        <a href="/tags/session/" target="_blank">
+                            <span class="chip bg-color">session</span>
+                        </a>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+            
+        </div>
+    </article>
 </main>
+
 
 <footer class="page-footer bg-color">
     <div class="container row center-align">
