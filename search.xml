@@ -26,6 +26,29 @@
     </entry>
     
     <entry>
+      <title>Hexo发布文章-操作命令</title>
+      <link href="/2017/10/11/hexoPage/"/>
+      <url>/2017/10/11/hexoPage/</url>
+      
+        <content type="html"><![CDATA[<h1 id="Hexo发布文章-操作命令"><a href="#Hexo发布文章-操作命令" class="headerlink" title="Hexo发布文章-操作命令"></a>Hexo发布文章-操作命令</h1><p>​    Hexo 是一个快速、简洁且高效的博客框架。Hexo 使用 <a href="http://daringfireball.net/projects/markdown/" target="_blank" rel="noopener">Markdown</a>（或其他渲染引擎）解析文章，在几秒内，即可利用靓丽的主题生成静态网页。 </p><blockquote><p><strong>init</strong></p></blockquote><pre><code>hexo init [folder]</code></pre><p>​    新建一个网站。如果没有设置 <code>folder</code> ，Hexo 默认在目前的文件夹建立网站。 </p><blockquote><p><strong>new</strong></p></blockquote><pre><code>hexo new [layout] &lt;title&gt;</code></pre><p>​    新建一篇文章。如果没有设置 <code>layout</code> 的话，默认使用 <a href="https://hexo.io/zh-cn/docs/configuration" target="_blank" rel="noopener">_config.yml</a> 中的 <code>default_layout</code> 参数代替。如果标题包含空格的话，请使用引号括起来。 </p><blockquote><p><strong>generate</strong></p></blockquote><pre><code>hexo generate</code></pre><p>​    生成静态文件。 该命令可以简写为 </p><pre><code>hexo g</code></pre><blockquote><p><strong>publish</strong></p></blockquote><pre><code>$ hexo publish [layout] &lt;filename&gt;</code></pre><p>​    发表草稿。 </p><blockquote><p><strong>server</strong></p></blockquote><pre><code>$ hexo server</code></pre><p>​    启动服务器。默认情况下，访问网址为： <code>http://localhost:4000/</code>。 </p><blockquote><p><strong>deploy</strong></p></blockquote><pre><code>$ hexo deploy</code></pre><p>​    部署网站。 </p><hr><p>​    所以，发布新文章具体顺序为：</p><pre><code>hexo ghexo shexo d</code></pre>]]></content>
+      
+      
+      <categories>
+          
+          <category> hexo </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> hexo </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    <entry>
       <title>更换主题后，新建page文件时报错</title>
       <link href="/2017/05/11/a/"/>
       <url>/2017/05/11/a/</url>
