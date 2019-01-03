@@ -5,10 +5,10 @@
 
 <head><meta name="generator" content="Hexo 3.8.0">
     <meta charset="utf-8">
-    <meta name="keywords" content="git常用命令, 、Li">
-    <meta name="description" content="Git常用指令详解​    Git是一个开源的分布式版本控制系统，可以有效、高速地处理从很小到非常大的项目版本管理。 Git 是 Linus Torvalds 为了帮助管理 Linux 内核开发而开发的一个开放源码的版本控制软件。 
+    <meta name="keywords" content="面试基本常识--长期更新js篇, 、Li">
+    <meta name="description" content="JS 问题请解释事件委托（event delegation）。事件委托是将事件监听器添加到父元素，而不是每个子元素单独设置事件监听器。当触发子元素时，事件会冒泡到父元素，监听器就会触发。这种技术的好处是：
 
-版本">
+内存占用减少，因为只需要一个父元">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -16,7 +16,7 @@
     <meta name="format-detection" content="telephone=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <title>git常用命令 | 、Li</title>
+    <title>面试基本常识--长期更新js篇 | 、Li</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/font-awesome.min.css">
@@ -247,13 +247,13 @@
 
 
 
-<div class="bg-cover post-cover" style="background-image: url('/medias/featureimages/17.jpg')">
+<div class="bg-cover post-cover" style="background-image: url('/medias/featureimages/7.jpg')">
     <div class="container">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
                     <div class="description center-align post-title">
-                        git常用命令
+                        面试基本常识--长期更新js篇
                     </div>
                 </div>
             </div>
@@ -273,8 +273,8 @@
             
             <div class="article-tag">
                 
-                <a href="/tags/git/" target="_blank">
-                    <span class="chip bg-color">git</span>
+                <a href="/tags/interview/" target="_blank">
+                    <span class="chip bg-color">interview</span>
                 </a>
                 
             </div>
@@ -284,49 +284,83 @@
                 <span class="post-cate">
                     <i class="fa fa-bookmark fa-fw icon-category"></i>
                     
-                    <a href="/categories/git/" class="post-category" target="_blank">
-                        git
+                    <a href="/categories/interview/" class="post-category" target="_blank">
+                        interview
                     </a>
                     
                 </span>
                 
 
                 <span class="post-date">
-                    <i class="fa fa-clock-o fa-fw"></i>2017-12-26
+                    <i class="fa fa-clock-o fa-fw"></i>2018-01-03
                 </span>
             </div>
         </div>
         <hr>
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h1 id="Git常用指令详解"><a href="#Git常用指令详解" class="headerlink" title="Git常用指令详解"></a>Git常用指令详解</h1><p>​    Git是一个开源的分布式版本控制系统，可以有效、高速地处理从很小到非常大的项目版本管理。 Git 是 Linus Torvalds 为了帮助管理 Linux 内核开发而开发的一个开放源码的版本控制软件。 </p>
-<blockquote>
-<p>版本库</p>
-</blockquote>
-<p>​    创建一个版本库 ： git init</p>
-<p>这样，一个空的版本库就创建好了，并在当前目录中创建一个叫 .git 的子目录。 </p>
-<blockquote>
-<p>增加内容</p>
-</blockquote>
-<p>​    git add <file> # 将工作文件修改提交到本地暂存区 </file></p>
-<p>​    git add . # 将所有修改过的工作文件提交暂存区 </p>
-<blockquote>
-<p>提交内容</p>
-</blockquote>
-<p>​    提交已经被add进来的改动.</p>
-<p>​    git commit -m “代码提交描述信息”</p>
-<pre><code>  git commit -a 会先把所有已经track的文件的改动add进来,然后提交(有点像svn的一次提交,不用先暂存). 对于没有track的文件,还是需要git add一下.
+                <h2 id="JS-问题"><a href="#JS-问题" class="headerlink" title="JS 问题"></a>JS 问题</h2><h3 id="请解释事件委托（event-delegation）。"><a href="#请解释事件委托（event-delegation）。" class="headerlink" title="请解释事件委托（event delegation）。"></a>请解释事件委托（event delegation）。</h3><p>事件委托是将事件监听器添加到父元素，而不是每个子元素单独设置事件监听器。当触发子元素时，事件会冒泡到父元素，监听器就会触发。这种技术的好处是：</p>
+<ul>
+<li>内存占用减少，因为只需要一个父元素的事件处理程序，而不必为每个后代都添加事件处理程序。</li>
+<li>无需从已删除的元素中解绑处理程序，也无需将处理程序绑定到新元素上。</li>
+</ul>
+<h3 id="请解释下面代码为什么不能用作-IIFE：function-foo-，需要作出哪些修改才能使其成为-IIFE？"><a href="#请解释下面代码为什么不能用作-IIFE：function-foo-，需要作出哪些修改才能使其成为-IIFE？" class="headerlink" title="请解释下面代码为什么不能用作 IIFE：function foo(){ }();，需要作出哪些修改才能使其成为 IIFE？"></a>请解释下面代码为什么不能用作 IIFE：<code>function foo(){ }();</code>，需要作出哪些修改才能使其成为 IIFE？</h3><p>IIFE（Immediately Invoked Function Expressions）代表立即执行函数。 JavaScript 解析器将 <code>function foo(){ }();</code>解析成<code>function foo(){ }</code>和<code>();</code>。其中，前者是函数声明；后者（一对括号）是试图调用一个函数，却没有指定名称，因此它会抛出<code>Uncaught SyntaxError: Unexpected token )</code>的错误。</p>
+<ul>
+<li><p>再添加一对括号，形式上有两种：<code>(function foo(){ })()</code>和<code>(function foo(){ }())</code>。以上函数不会暴露到全局作用域，如果不需要在函数内部引用自身，可以省略函数的名称。</p>
+</li>
+<li><p>用到 <code>void</code> 操作符：<code>void function foo(){ }();</code>。但是，这种做法是有问题的。表达式的值是<code>undefined</code>，所以如果你的 IIFE 有返回值，不要用这种做法。例如：</p>
+</li>
+</ul>
+<pre><code>// Don&#39;t add JS syntax to this code block to prevent Prettier from formatting it.
+const foo = void function bar() { return &#39;foo&#39;; }();
 
- git commit --amend 增补提交. 会使用与当前提交节点相同的父节点进行一次新的提交,旧的提交将会被取消.
-</code></pre><blockquote>
-<p>管理分支</p>
-</blockquote>
-<p>​    管理分支：git branch </p>
-<p>​    查看本地分支：git branch</p>
-<p>​    查看远程分支：git branch -r</p>
-<p>​    创建本地分支：git branch [name] —-注意新分支创建后不会自动切换为当前分支</p>
-<p>​    切换分支：git checkout [name]</p>
-<p>​    创建新分支并立即切换到新分支：git checkout -b [name]</p>
+console.log(foo); // undefined
+</code></pre><h3 id="请说明-forEach循环和-map-循环的主要区别，它们分别在什么情况下使用？"><a href="#请说明-forEach循环和-map-循环的主要区别，它们分别在什么情况下使用？" class="headerlink" title="请说明.forEach循环和.map()循环的主要区别，它们分别在什么情况下使用？"></a>请说明<code>.forEach</code>循环和<code>.map()</code>循环的主要区别，它们分别在什么情况下使用？</h3><p>为了理解两者的区别，我们看看它们分别是做什么的。</p>
+<p><strong><code>forEach</code></strong></p>
+<ul>
+<li>遍历数组中的元素;</li>
+<li>为每个元素执行回调;</li>
+<li>无返回值。</li>
+</ul>
+<pre class=" language-js"><code class="language-js"><span class="token keyword">const</span> a <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">,</span> <span class="token number">3</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+<span class="token keyword">const</span> doubled <span class="token operator">=</span> a<span class="token punctuation">.</span><span class="token function">forEach</span><span class="token punctuation">(</span><span class="token punctuation">(</span>num<span class="token punctuation">,</span> index<span class="token punctuation">)</span> <span class="token operator">=</span><span class="token operator">></span> <span class="token punctuation">{</span>
+  <span class="token comment" spellcheck="true">// 执行与 num、index 相关的代码</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment" spellcheck="true">// doubled = undefined</span>
+</code></pre>
+<p><strong><code>map</code></strong></p>
+<ul>
+<li>遍历数组中的元素;</li>
+<li>通过对每个元素调用函数，将每个元素“映射（map）”到一个新元素，从而创建一个新数组。</li>
+</ul>
+<pre class=" language-js"><code class="language-js"><span class="token keyword">const</span> a <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">,</span> <span class="token number">3</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+<span class="token keyword">const</span> doubled <span class="token operator">=</span> a<span class="token punctuation">.</span><span class="token function">map</span><span class="token punctuation">(</span>num <span class="token operator">=</span><span class="token operator">></span> <span class="token punctuation">{</span>
+  <span class="token keyword">return</span> num <span class="token operator">*</span> <span class="token number">2</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment" spellcheck="true">// doubled = [2, 4, 6]</span>
+</code></pre>
+<p><code>.forEach</code>和<code>.map()</code>的主要区别在于<code>.map()</code>返回一个新的数组。如果你想得到一个结果，但不想改变原始数组，用<code>.map()</code>。如果你只需要在数组上做迭代修改，用<code>forEach</code>。</p>
+<h3 id="宿主对象（host-objects）和原生对象（native-objects）的区别是什么？"><a href="#宿主对象（host-objects）和原生对象（native-objects）的区别是什么？" class="headerlink" title="宿主对象（host objects）和原生对象（native objects）的区别是什么？"></a>宿主对象（host objects）和原生对象（native objects）的区别是什么？</h3><ul>
+<li><p>原生对象是由 ECMAScript 规范定义的 JavaScript 内置对象，比如<code>String</code>、<code>Math</code>、<code>RegExp</code>、<code>Object</code>、<code>Function</code>等等。</p>
+</li>
+<li><p>宿主对象是由运行时环境（浏览器 或 Node）提供，比如<code>window</code>、<code>XMLHTTPRequest</code>等等。</p>
+</li>
+</ul>
+<h3 id="请解释function-foo-和var-foo-function-之间foo的用法上的区别。"><a href="#请解释function-foo-和var-foo-function-之间foo的用法上的区别。" class="headerlink" title="请解释function foo() {}和var foo = function() {}之间foo的用法上的区别。"></a>请解释<code>function foo() {}</code>和<code>var foo = function() {}</code>之间<code>foo</code>的用法上的区别。</h3><p>前者是函数声明，后者是函数表达式。关键的区别在于函数声明会使函数体提升（具有与变量相同的提升行为），但函数表达式的函数体不能。有关变量提升的更多解释，请参阅上面关于变量提升的问题。如果你试图在定义函数表达式之前调用它，你会得到一个<code>Uncaught TypeError: XXX is not a function</code>的错误。</p>
+<p><strong>函数声明</strong></p>
+<pre class=" language-js"><code class="language-js"><span class="token function">foo</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment" spellcheck="true">// 'FOOOOO'</span>
+<span class="token keyword">function</span> <span class="token function">foo</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'FOOOOO'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<p><strong>函数表达式</strong></p>
+<pre class=" language-js"><code class="language-js"><span class="token function">foo</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment" spellcheck="true">// Uncaught TypeError: foo is not a function</span>
+<span class="token keyword">var</span> foo <span class="token operator">=</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'FOOOOO'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+</code></pre>
 
             </div>
             <hr>
@@ -465,7 +499,7 @@
                     <span class="reprint-tip">转载请注明: </span>
                     <a href="https://cookinghero.github.io" class="b-link-green">、Li</a>
                     <i class="fa fa-angle-right fa-lg fa-fw text-color"></i>
-                    <a href="/2017/12/26/git/" class="b-link-green">git常用命令</a>
+                    <a href="/2018/01/03/interview/" class="b-link-green">面试基本常识--长期更新js篇</a>
                 </p>
             </div>
         </div>
@@ -485,7 +519,7 @@
     <div class="row article-row">
         
         <div class="article col s12 m6" data-aos="fade-up">
-            <div class="article-badge left-badge text-color">上一篇</div>
+            <div class="article-badge left-badge text-color">本篇</div>
             <div class="card">
                 <a href="/2018/01/03/interview/">
                     <div class="card-image">
@@ -501,9 +535,9 @@
 
 内存占用减少，因为只需要一个父元</div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="fa fa-clock-o fa-fw icon-date"></i>2018-01-03
-                        </span>
+                            <span class="publish-date">
+                                <i class="fa fa-clock-o fa-fw icon-date"></i>2018-01-03
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fa fa-bookmark fa-fw icon-category"></i>
@@ -516,6 +550,7 @@
                         </span>
                     </div>
                 </div>
+
                 
                 <div class="card-action article-tags">
                     
@@ -532,32 +567,29 @@
         <div class="article col s12 m6" data-aos="fade-up">
             <div class="article-badge right-badge text-color">下一篇</div>
             <div class="card">
-                <a href="/2017/10/11/hexoPage/">
+                <a href="/2017/12/26/git/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/12.jpg" class="responsive-img" alt="Hexo发布文章-操作命令">
+                        <img src="/medias/featureimages/17.jpg" class="responsive-img" alt="git常用命令">
                         
-                        <span class="card-title">Hexo发布文章-操作命令</span>
+                        <span class="card-title">git常用命令</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
-                    <div class="summary">Hexo发布文章-操作命令​    Hexo 是一个快速、简洁且高效的博客框架。Hexo 使用 Markdown（或其他渲染引擎）解析文章，在几秒内，即可利用靓丽的主题生成静态网页。 
+                    <div class="summary">Git常用指令详解​    Git是一个开源的分布式版本控制系统，可以有效、高速地处理从很小到非常大的项目版本管理。 Git 是 Linus Torvalds 为了帮助管理 Linux 内核开发而开发的一个开放源码的版本控制软件。 
 
-init
-
-hexo init [folder]
-​</div>
+版本</div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="fa fa-clock-o fa-fw icon-date"></i>2017-10-11
+                                <i class="fa fa-clock-o fa-fw icon-date"></i>2017-12-26
                             </span>
                         <span class="publish-author">
                             
                             <i class="fa fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/hexo/" class="post-category" target="_blank">
-                                    hexo
+                            <a href="/categories/git/" class="post-category" target="_blank">
+                                    git
                                 </a>
                             
                             
@@ -567,8 +599,8 @@ hexo init [folder]
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/hexo/" target="_blank">
-                        <span class="chip bg-color">hexo</span>
+                    <a href="/tags/git/" target="_blank">
+                        <span class="chip bg-color">git</span>
                     </a>
                     
                 </div>
