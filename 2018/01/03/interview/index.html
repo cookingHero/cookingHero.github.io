@@ -304,6 +304,7 @@
 <li>内存占用减少，因为只需要一个父元素的事件处理程序，而不必为每个后代都添加事件处理程序。</li>
 <li>无需从已删除的元素中解绑处理程序，也无需将处理程序绑定到新元素上。</li>
 </ul>
+<hr>
 <h3 id="请解释下面代码为什么不能用作-IIFE：function-foo-，需要作出哪些修改才能使其成为-IIFE？"><a href="#请解释下面代码为什么不能用作-IIFE：function-foo-，需要作出哪些修改才能使其成为-IIFE？" class="headerlink" title="请解释下面代码为什么不能用作 IIFE：function foo(){ }();，需要作出哪些修改才能使其成为 IIFE？"></a>请解释下面代码为什么不能用作 IIFE：<code>function foo(){ }();</code>，需要作出哪些修改才能使其成为 IIFE？</h3><p>IIFE（Immediately Invoked Function Expressions）代表立即执行函数。 JavaScript 解析器将 <code>function foo(){ }();</code>解析成<code>function foo(){ }</code>和<code>();</code>。其中，前者是函数声明；后者（一对括号）是试图调用一个函数，却没有指定名称，因此它会抛出<code>Uncaught SyntaxError: Unexpected token )</code>的错误。</p>
 <ul>
 <li><p>再添加一对括号，形式上有两种：<code>(function foo(){ })()</code>和<code>(function foo(){ }())</code>。以上函数不会暴露到全局作用域，如果不需要在函数内部引用自身，可以省略函数的名称。</p>
@@ -315,7 +316,8 @@
 const foo = void function bar() { return &#39;foo&#39;; }();
 
 console.log(foo); // undefined
-</code></pre><h3 id="请说明-forEach循环和-map-循环的主要区别，它们分别在什么情况下使用？"><a href="#请说明-forEach循环和-map-循环的主要区别，它们分别在什么情况下使用？" class="headerlink" title="请说明.forEach循环和.map()循环的主要区别，它们分别在什么情况下使用？"></a>请说明<code>.forEach</code>循环和<code>.map()</code>循环的主要区别，它们分别在什么情况下使用？</h3><p>为了理解两者的区别，我们看看它们分别是做什么的。</p>
+</code></pre><hr>
+<h3 id="请说明-forEach循环和-map-循环的主要区别，它们分别在什么情况下使用？"><a href="#请说明-forEach循环和-map-循环的主要区别，它们分别在什么情况下使用？" class="headerlink" title="请说明.forEach循环和.map()循环的主要区别，它们分别在什么情况下使用？"></a>请说明<code>.forEach</code>循环和<code>.map()</code>循环的主要区别，它们分别在什么情况下使用？</h3><p>为了理解两者的区别，我们看看它们分别是做什么的。</p>
 <p><strong><code>forEach</code></strong></p>
 <ul>
 <li>遍历数组中的元素;</li>
@@ -342,12 +344,14 @@ console.log(foo); // undefined
 <span class="token comment" spellcheck="true">// doubled = [2, 4, 6]</span>
 </code></pre>
 <p><code>.forEach</code>和<code>.map()</code>的主要区别在于<code>.map()</code>返回一个新的数组。如果你想得到一个结果，但不想改变原始数组，用<code>.map()</code>。如果你只需要在数组上做迭代修改，用<code>forEach</code>。</p>
+<hr>
 <h3 id="宿主对象（host-objects）和原生对象（native-objects）的区别是什么？"><a href="#宿主对象（host-objects）和原生对象（native-objects）的区别是什么？" class="headerlink" title="宿主对象（host objects）和原生对象（native objects）的区别是什么？"></a>宿主对象（host objects）和原生对象（native objects）的区别是什么？</h3><ul>
 <li><p>原生对象是由 ECMAScript 规范定义的 JavaScript 内置对象，比如<code>String</code>、<code>Math</code>、<code>RegExp</code>、<code>Object</code>、<code>Function</code>等等。</p>
 </li>
 <li><p>宿主对象是由运行时环境（浏览器 或 Node）提供，比如<code>window</code>、<code>XMLHTTPRequest</code>等等。</p>
 </li>
 </ul>
+<hr>
 <h3 id="请解释function-foo-和var-foo-function-之间foo的用法上的区别。"><a href="#请解释function-foo-和var-foo-function-之间foo的用法上的区别。" class="headerlink" title="请解释function foo() {}和var foo = function() {}之间foo的用法上的区别。"></a>请解释<code>function foo() {}</code>和<code>var foo = function() {}</code>之间<code>foo</code>的用法上的区别。</h3><p>前者是函数声明，后者是函数表达式。关键的区别在于函数声明会使函数体提升（具有与变量相同的提升行为），但函数表达式的函数体不能。有关变量提升的更多解释，请参阅上面关于变量提升的问题。如果你试图在定义函数表达式之前调用它，你会得到一个<code>Uncaught TypeError: XXX is not a function</code>的错误。</p>
 <p><strong>函数声明</strong></p>
 <pre class=" language-js"><code class="language-js"><span class="token function">foo</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment" spellcheck="true">// 'FOOOOO'</span>
@@ -519,43 +523,41 @@ console.log(foo); // undefined
     <div class="row article-row">
         
         <div class="article col s12 m6" data-aos="fade-up">
-            <div class="article-badge left-badge text-color">本篇</div>
+            <div class="article-badge left-badge text-color">上一篇</div>
             <div class="card">
-                <a href="/2018/01/03/interview/">
+                <a href="/2018/01/04/interviewCss/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/7.jpg" class="responsive-img" alt="面试基本常识--长期更新js篇">
+                        <img src="/medias/featureimages/9.jpg" class="responsive-img" alt="面试基本常识--Css篇">
                         
-                        <span class="card-title">面试基本常识--长期更新js篇</span>
+                        <span class="card-title">面试基本常识--Css篇</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
-                    <div class="summary">JS 问题请解释事件委托（event delegation）。事件委托是将事件监听器添加到父元素，而不是每个子元素单独设置事件监听器。当触发子元素时，事件会冒泡到父元素，监听器就会触发。这种技术的好处是：
-
-内存占用减少，因为只需要一个父元</div>
+                    <div class="summary">CSS 问题重置（resetting）CSS 和 标准化（normalizing）CSS 的区别是什么？你会选择哪种方式，为什么？
+重置（Resetting）： 重置意味着除去所有的浏览器默认样式。对于页面所有的元素，像margin、pad</div>
                     <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="fa fa-clock-o fa-fw icon-date"></i>2018-01-03
-                            </span>
+                        <span class="publish-date">
+                            <i class="fa fa-clock-o fa-fw icon-date"></i>2018-01-04
+                        </span>
                         <span class="publish-author">
                             
                             <i class="fa fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/interview/" class="post-category" target="_blank">
-                                    interview
+                            <a href="/categories/Css/" class="post-category" target="_blank">
+                                    Css
                                 </a>
                             
                             
                         </span>
                     </div>
                 </div>
-
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/interview/" target="_blank">
-                        <span class="chip bg-color">interview</span>
+                    <a href="/tags/Css/" target="_blank">
+                        <span class="chip bg-color">Css</span>
                     </a>
                     
                 </div>
